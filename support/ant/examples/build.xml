@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="jsmin" default="main" basedir=".">
+<project name="jcoffeescript-examples" default="main" basedir=".">
 
     <taskdef name="jcsc"
              classname="org.jcoffeescript.ant.AntTask"
