@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="jsmin" default="main" basedir=".">
+
+    <taskdef name="jcsc"
+             classname="org.jcoffeescript.ant.AntTask"
+             classpath="../target/jcoffeescript-ant.jar">
+        <classpath>
+            <fileset dir="../../../target/dist" includes="*.jar" />
+        </classpath>
+    </taskdef>
+
+    <target name="main">
+       <jcsc bare="true" destdir="output">
+           <fileset dir="coffee/" includes="*.coffee" />
+       </jcsc>
+    </target>
+
+</project>
